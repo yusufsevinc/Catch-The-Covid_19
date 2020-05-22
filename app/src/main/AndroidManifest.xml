@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.yusufsevinc.catchthecovid_19">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/virus"
+        android:label="Catch The COVID-19"
+        android:roundIcon="@drawable/virus"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.NoActionBar">
+        <activity android:name=".Main2Activity"
+            android:screenOrientation="sensor" ></activity>
+        <activity android:name=".MainActivity"
+            android:screenOrientation="fullSensor"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

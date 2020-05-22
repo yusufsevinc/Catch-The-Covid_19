@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+
+    tools:context="covid.yusufsevinc.covid.Main2Activity">
+
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="305dp"
+        android:layout_height="308dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginLeft="140dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginRight="52dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewhighscore"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.493">
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:onClick="scorecount"
+            app:layout_column="0"
+            app:layout_row="0"
+            app:srcCompat="@drawable/virus"
+            tools:srcCompat="@drawable/virus" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:onClick="scorecount"
+            app:layout_column="2"
+            app:layout_row="0"
+            app:srcCompat="@drawable/virus" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:onClick="scorecount"
+            app:layout_column="0"
+            app:layout_row="1"
+            app:srcCompat="@drawable/virus" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:onClick="scorecount"
+            app:layout_column="1"
+            app:layout_row="1"
+            app:srcCompat="@drawable/virus" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:onClick="scorecount"
+            app:layout_column="2"
+            app:layout_row="1"
+            app:srcCompat="@drawable/virus" />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:onClick="scorecount"
+            app:layout_column="0"
+            app:layout_row="2"
+            app:srcCompat="@drawable/virus" />
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:onClick="scorecount"
+            app:layout_column="1"
+            app:layout_row="2"
+            app:srcCompat="@drawable/virus" />
+
+        <ImageView
+            android:id="@+id/imageView0"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:onClick="scorecount"
+            app:layout_column="2"
+            app:layout_row="2"
+            app:srcCompat="@drawable/virus" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:onClick="scorecount"
+            app:layout_column="1"
+            app:layout_row="0"
+            app:srcCompat="@drawable/virus" />
+    </androidx.gridlayout.widget.GridLayout>
+
+    <TextView
+        android:id="@+id/textViewscore"
+        android:layout_width="120dp"
+        android:layout_height="34dp"
+        android:layout_marginBottom="52dp"
+        android:text="Score: 0"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/textViewhighscore" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="@android:style/Widget.Holo.ProgressBar"
+
+        android:layout_width="103dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginLeft="44dp"
+        android:layout_marginBottom="260dp"
+        android:background="@drawable/timebackground0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewtime"
+        android:layout_width="70dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="50dp"
+        android:text="Time: 30"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/progressBar"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewhighscore"
+        android:layout_width="120dp"
+        android:layout_height="29dp"
+        android:text="High Score: "
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textViewscore"
+        app:layout_constraintStart_toStartOf="@+id/textViewtime"
+        app:layout_constraintTop_toBottomOf="@+id/progressBar" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
